@@ -14,16 +14,19 @@ public class Main {
 		new PacientObserverGUI(pacient);
 		new PacientSymptomGUI(pacient);
 		new PacientThermometerGUI(pacient);
+		new SemaphorGUI(pacient);
 		
 		Observable secondPatient = new Covid19Pacient("Jon", 30);
 		new PacientObserverGUI(secondPatient);
 		new PacientSymptomGUI(secondPatient);
 		new PacientThermometerGUI(secondPatient);
+		new SemaphorGUI(secondPatient);
 		
 		Observable thirdPatient = new Covid19Pacient("Ekain", 26);
 		new PacientObserverGUI(thirdPatient);
 		new PacientSymptomGUI(thirdPatient);
 		new PacientThermometerGUI(thirdPatient);
+		new SemaphorGUI(thirdPatient);
 	}
 
 
