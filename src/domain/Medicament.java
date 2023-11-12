@@ -29,9 +29,10 @@ public class Medicament {
 	public Symptom addSymptomByName(String symptom){
 		Symptom s2=null;
 		Symptom s=getSymptomByName(symptom);
+		SymptomFactory sf = new SymptomFactory();
 		if (s==null) {
 
-			s2=createSymptom(symptom);
+			s2=sf.createSymptom(symptom);
 			symptoms.add(s2);
 		}
 		return s2;
