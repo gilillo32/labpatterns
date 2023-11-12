@@ -11,4 +11,3 @@ public class sypmtomNameComparator implements Comparator<Symptom>{
 
 	}
 
-}
