@@ -55,8 +55,9 @@ public class Covid19Pacient extends Observable{
 	
 	public Symptom addSymptomByName(String symptom, Integer w){
 		Symptom s=getSymptomByName(symptom);
+		SymptomFactory sf = new SymptomFactory();
 		if (s==null) {
-			s=createSymptom(symptom); 
+			s=sf.createSymptom(symptom); 
 			symptoms.put(s,w);		
 		}
 		setChanged();
